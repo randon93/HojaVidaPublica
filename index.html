@@ -42,7 +42,7 @@
       <div class="contenedor">
         <h2> 1 - Datos Personales</h2>
         <div class="contenedor-datos">
-          <div class="datos">
+          <div class="datos resaltar">
             <div class="">
               <label for="">Primer Apellido: </label>
             </div>
@@ -50,7 +50,7 @@
               <input type="text" name="" value="">
             </div>
           </div>
-          <div class="datos">
+          <div class="datos resaltar">
             <div class="">
               <label for="">Primer Apellido: </label>
             </div>
@@ -58,7 +58,7 @@
               <input type="text" name="" value="">
             </div>
           </div>
-          <div class="datos">
+          <div class="datos resaltar">
             <div class="">
               <label for="">Primer Apellido: </label>
             </div>
@@ -66,7 +66,7 @@
               <input type="text" name="" value="">
             </div>
           </div>
-          <div class="datos">
+          <div class="datos resaltar">
             <div class="">
               <label for="">Documentode Identificacion: </label>
             </div>
@@ -81,7 +81,7 @@
               <input type="text" name="" value="">
             </div>
           </div>
-          <div class="datos">
+          <div class="datos resaltar">
             <div class="">
               <label for="">Sexo: </label>
             </div>
@@ -92,7 +92,7 @@
               <input type="checkbox" name="" value="">
             </div>
           </div>
-          <div class="datos">
+          <div class="datos resaltar">
             <div class="">
               <label for="">Nacionalidad: </label>
             </div>
@@ -105,42 +105,294 @@
             <input type="text" name="" value="">
             </div>
           </div>
-          <div class="datos datos-d">
+          <div class="datos-d resaltar">
             <div class="">
-              <label for="">Fecha y Lugar de Nacimiento </label>
+              <h3>Fecha y Lugar de Nacimiento</h3>
             </div>
             <div class="">
-              <label for="">Fecha: </label>
-              <input type="date" name="" value="">
-              <label for="">Pais</label>
-              <input type="text" name="" value="">
-              <label for="">Departamento</label>
-              <input type="text" name="" value="">
-              <label for="">Municipio</label>
-              <input type="text" name="" value="">
+              <ul>
+                <li>
+                  <label for="">Fecha: </label>
+                  <input type="date" name="" value="">
+                </li>
+                <li>
+                  <label for="">Pais</label>
+                  <input type="text" name="" value="">
+                </li>
+                <li>
+                  <label for="">Dpto</label>
+                  <input type="text" name="" value="">
+                </li>
+                <li>
+                  <label for="">Mpio</label>
+                  <input type="text" name="" value="">
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="datos datos-d">
+          <div class="datos-d resaltar">
             <div class="">
-              <label for="">Direccion de Correspondencia </label>
+              <h3>Direccion de Correspondencia </h3>
             </div>
             <div class="">
-              <input type="text" name="" value="">
-              <label for="">Pais</label>
-              <input type="text" name="" value="">
-              <label for="">Departamento</label>
-              <input type="text" name="" value="">
-              <label for="">Municipio</label>
-              <input type="text" name="" value="">
-              <label for="">Telefono</label>
-              <input type="text" name="" value="">
+              <ul>
+                <li>
+                  <label for="">Direccion</label>
+                  <input type="text" name="" value="">
+                </li>
+                <li>
+                  <label for="">Pais</label>
+                  <input type="text" name="" value="">
+                </li>
+                <li>
+                  <label for="">Dpto: </label>
+                  <input type="text" name="" value="">
+                </li>
+                <li>
+                  <label for="">Municipio</label>
+                  <input type="text" name="" value="">
+                </li>
+                <li>
+                  <label for="">Telefono</label>
+                  <input type="text" name="" value="">
+                </li>
+              </ul>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="infoAcademica">
+      <div class="contenedor">
+        <h2>2 - Informacion Academica</h2>
+        <div class="contenedor-datos">
+          <div class="datos-u resaltar">
+            <div>
+              <h3>Educacion Basica y Media</h3>
+              <p>Marque con una X el ultimo grado aprobado( Los frados 1 a 6 de bachiderato equivalen a los grados 6 a 11 de educacion
+                basica secundaria y media ) </p>
+            </div>
+            <div>
+              <h3>Educacion Basica</h3>
+              <ul>
+                <li>
+                  <label for=""> Grado: </label>
+                  <select name="grados" id="grados">
+                  <option value="" selected>-- SELCCIONE --</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                  <option value="">6</option>
+                  <option value="">7</option>
+                  <option value="">8</option>
+                  <option value="">9</option>
+                  <option value="">10</option>
+                  <option value="">11</option>
+                  </select>
+                </li>
+                <li>
+                  <label for=""> Titulo Obtenido: </label>
+                  <input type="text" name="titutlo" id="">
+                </li>
+                <li>
+                  <label for="">Fecha de Grado: </label>
+                  <input type="date" name="fechaGrado">
+                </li>
+              </ul>
+            </div>
+          </div>          
+          <div class="datos-u resaltar">
+            <div>
+              <h3>Educacion Superior (Pregrado y Postgrado)</h3>
+              <p>Diligencie este pinto en estricto orden cronologico, en modalidad academica escriba: 
+                <b>TC:</b> (Tecnica)
+                <b>ES:</b> (Especializacion)
+                <b>TL:</b> (Tecnologia)
+                <b>MG:</b> (Mestria o Msgister)
+                <b>TE:</b> (Tecnologia especializada)
+                <b>DOC:</b> (Doctorado o PHD)
+                <b>UN:</b> (Universitaria)
+                Relacione al frente el numero de la tarjeta  profesional (si esta ha sido prevista en una ley).
+              </p>
+            </div>
+            <div>
+              <TABLE BORDER>
+                <TR>
+                  <TH ROWSPAN=2>Modalidad Academica</TH>
+                  <TH ROWSPAN=2>No. Semestre Aprobados</TH>
+                  <TH colspan=2>Graduado</TH>
+                  <TH rowspan=2>Nombre de los Estudios O Titulo Obtenido</TH>
+                  <TH colspan=2>Terminacion</TH>
+                  <TH rowspan=2>No. Numero de tarjeta profesional</TH>
+                </TR>
+                <TR>                  
+                  <TH>SI</TH>
+                  <TH>NO</TH>
+                  <th>MES</th>
+                  <th >AÑO</th>
+                </TR>
+                <TR>
+                  <TD>algo</TD>
+                  <TD>algo</TD>
+                  <TD>algo</TD>
+                  <TD>algo</TD>
+                  <TD>ALGO</TD>
+                  <TD>ALGO</TD>
+                  <TD>ALGO</TD>
+                  <td>algo</td>
+                </TR>
+                <TR>
+                  <TD>algo</TD>
+                  <TD>algo</TD>
+                  <TD>algo</TD>
+                  <TD>algo</TD>
+                  <TD>ALGO</TD>
+                  <TD>ALGO</TD>
+                  <TD>ALGO</TD>
+                  <td>algo</td>
+                </TR>
+                <TR>
+                  <TD>algo</TD>
+                  <TD>algo</TD>
+                  <TD>algo</TD>
+                  <TD>algo</TD>
+                  <TD>ALGO</TD>
+                  <TD>ALGO</TD>
+                  <TD>ALGO</TD>
+                  <td>algo</td>
+                </TR>
+                <TR>
+                  <TD>algo</TD>
+                  <TD>algo</TD>
+                  <TD>algo</TD>
+                  <TD>algo</TD>
+                  <TD>ALGO</TD>
+                  <TD>ALGO</TD>
+                  <TD>ALGO</TD>
+                  <td>algo</td>
+                </TR>
+                <TR>
+                  <TD>algo</TD>
+                  <TD>algo</TD>
+                  <TD>algo</TD>
+                  <TD>algo</TD>
+                  <TD>ALGO</TD>
+                  <TD>ALGO</TD>
+                  <TD>ALGO</TD>
+                  <td>algo</td>
+                </TR>
+              </TABLE>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    
+    <section id="">
+      <div class="contenedor">
+        <h2>3 - Experiencia Laboral</h2>
+        <div class="contenedor-datos">
+          <div class="resaltar datos-u">
+            <div>
+              <p>Relacione su Experiencia laboral o de prestacion de serivicios en estricto
+                orden cronologico comenzando por el mas actual.</p>                
+            </div>
+            <div class="contenido">
+              <h3>Empleo actual o contrato vigente</h3>
+              <ul>
+                <li>
+                  <div>
+                    <label for="">Empresa o Entidad</label>
+                    <input type="text">
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <label for="">publica</label>
+                    <input type="text" name="" id="">
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <label for="">Privada</label>
+                    <input type="text">
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <label for="">Pais</label>
+                    <input type="text">
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <div>
+                    <label for="">Departamento: </label>
+                    <input type="text">
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <label for="">Municipio: </label>
+                    <input type="text">
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <label for="">Correo electronico: </label>
+                    <input type="text">
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <div>
+                    <label for="">Telefonos: </label>
+                    <input type="text" name="telefonosEmpresa-expActual">
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <label for="">Fecha de Ingeso</label>
+                    <input type="date" name="fechaIngreso-expActual" id="">
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <label for="">Fecha de Retiro</label>
+                    <input type="date" name="fechaRetiro-expActual" id="">
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <div>
+                    <label for="">Cargo o Contrato Actual</label>
+                    <input type="text" name="cargo-expActual" id="">
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <label for="">Dependencia</label>
+                    <input type="text" name="dependencia-expActual" id="">
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <label for="">Direccion</label>
+                    <input type="text" name="direccion-expActual" id="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
 
