@@ -143,3 +143,7 @@ input[type="text"],input[type="date"] {
    border-right: 1px solid;
    margin-right: 10px;
  }
+
+ .otro {
+   color: blue;
+ }
