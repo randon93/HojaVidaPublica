@@ -86,9 +86,9 @@
               <label for="">Sexo: </label>
             </div>
             <div class="">
-                <label for="">M: </label>
+              <label for="">M: </label>
               <input type="checkbox" name="" value="">
-                <label for="">F: </label>
+              <label for="">F: </label>
               <input type="checkbox" name="" value="">
             </div>
           </div>
@@ -97,12 +97,12 @@
               <label for="">Nacionalidad: </label>
             </div>
             <div class="">
-                <label for="">Col: </label>
+              <label for="">Col: </label>
               <input type="checkbox" name="" value="">
-                <label for="">Extranjero: </label>
+              <label for="">Extranjero: </label>
               <input type="checkbox" name="" value="">
               <label for="">Pais: </label>
-            <input type="text" name="" value="">
+              <input type="text" name="" value="">
             </div>
           </div>
           <div class="datos-d resaltar">
@@ -156,13 +156,13 @@
                   <label for="">Telefono</label>
                   <input type="text" name="" value="">
                 </li>
-              </ul>              
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
+
     <section id="infoAcademica">
       <div class="contenedor">
         <h2>2 - Informacion Academica</h2>
@@ -170,7 +170,8 @@
           <div class="datos-u resaltar">
             <div>
               <h3>Educacion Basica y Media</h3>
-              <p>Marque con una X el ultimo grado aprobado( Los frados 1 a 6 de bachiderato equivalen a los grados 6 a 11 de educacion
+              <p>Marque con una X el ultimo grado aprobado( Los frados 1 a 6 de bachiderato equivalen a los grados 6 a
+                11 de educacion
                 basica secundaria y media ) </p>
             </div>
             <div>
@@ -179,18 +180,18 @@
                 <li>
                   <label for=""> Grado: </label>
                   <select name="grados" id="grados">
-                  <option value="" selected>-- SELCCIONE --</option>
-                  <option value="">1</option>
-                  <option value="">2</option>
-                  <option value="">3</option>
-                  <option value="">4</option>
-                  <option value="">5</option>
-                  <option value="">6</option>
-                  <option value="">7</option>
-                  <option value="">8</option>
-                  <option value="">9</option>
-                  <option value="">10</option>
-                  <option value="">11</option>
+                    <option value="" selected>-- SELCCIONE --</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
                   </select>
                 </li>
                 <li>
@@ -203,11 +204,11 @@
                 </li>
               </ul>
             </div>
-          </div>          
+          </div>
           <div class="datos-u resaltar">
             <div>
               <h3>Educacion Superior (Pregrado y Postgrado)</h3>
-              <p>Diligencie este pinto en estricto orden cronologico, en modalidad academica escriba: 
+              <p>Diligencie este pinto en estricto orden cronologico, en modalidad academica escriba:
                 <b>TC:</b> (Tecnica)
                 <b>ES:</b> (Especializacion)
                 <b>TL:</b> (Tecnologia)
@@ -215,7 +216,7 @@
                 <b>TE:</b> (Tecnologia especializada)
                 <b>DOC:</b> (Doctorado o PHD)
                 <b>UN:</b> (Universitaria)
-                Relacione al frente el numero de la tarjeta  profesional (si esta ha sido prevista en una ley).
+                Relacione al frente el numero de la tarjeta profesional (si esta ha sido prevista en una ley).
               </p>
             </div>
             <div>
@@ -228,11 +229,11 @@
                   <TH colspan=2>Terminacion</TH>
                   <TH rowspan=2>No. Numero de tarjeta profesional</TH>
                 </TR>
-                <TR>                  
+                <TR>
                   <TH>SI</TH>
                   <TH>NO</TH>
                   <th>MES</th>
-                  <th >AÑO</th>
+                  <th>AÑO</th>
                 </TR>
                 <TR>
                   <TD>algo</TD>
@@ -298,9 +299,9 @@
           <div class="resaltar datos-u" id="padre">
             <div>
               <p>Relacione su Experiencia laboral o de prestacion de serivicios en estricto
-                orden cronologico comenzando por el mas actual.</p>                
+                orden cronologico comenzando por el mas actual.</p>
             </div>
-            <div class="contenido" >
+            <div class="contenido">
               <h3>Empleo actual o contrato vigente</h3>
               <ul>
                 <li>
@@ -387,63 +388,89 @@
                     <input type="text" name="direccion-expActual" id="">
                   </div>
                 </li>
-              </ul>
-              <button id ="btn_agregar" onclick="crearDin()"> aca perro</button>
-            </div>
+              </ul>             
+            </div>            
           </div>
+          <button id="btn_agregar" onclick="crearDin()">Mas Exp.</button>
         </div>
       </div>
     </section>
   </main>
 
-<script>
-  function crearDin() {
+  <script>
+    function crearDin() {
 
-    var padre = document.getElementById("padre");
-    var divPadre = document.createElement("div");
-    var ul = document.createElement("ul");
-    var h3 = document.createElement("h3");
-    h3.textContent = "CARGO O CONTRATO ANTERIOR";
-    divPadre.appendChild(h3);
-    var input1 = document.createElement("input");
-    input.type = "text";    
-    for (let index = 0; index < 13 ; index++) {      
+      var padre = document.getElementById("padre");
+      var divPadre = document.createElement("div");
+      var h3 = document.createElement("h3");
+      h3.textContent = "CARGO O CONTRATO ANTERIOR";
+      divPadre.appendChild(h3);
+      var aux = "";
 
-      var label1 = document.createElement("label");
-      var div1 = document.createElement("div");
-      var li1 = document.createElement("li");
-      if (index < 1) {
-        label.textContent = "Empresa o Entidad";
-      } else if(index == 1){
+      for (let index = 0; index < 13; index++) {
+
+        var ul = document.createElement("ul");
+        var input = document.createElement("input");
+        var label = document.createElement("label");
+        var div = document.createElement("div");
+        var li = document.createElement("li");
+        if (index < 1) {
+          label.textContent = "Empresa o Entidad";
+          input.type = "text";
+          aux = ul;
+        } else if (index == 1) {
           label.textContent = "Publica";
-      } else if ( index == 2){
+          input.type = "text";
+        } else if (index == 2) {
           label.textContent = "Privada";
-      } else if (index == 3) {
+          input.type = "text";
+        } else if (index == 3) {
           label.textContent = "Pais";
-      } else if (index == 4) {
+          input.type = "text";
+        } else if (index == 4) {
           label.textContent = "Departamento";
+          input.type = "text";
+          aux = ul;
+        } else if (index == 5) {
+          label.textContent = "Municipio";
+          input.type = "text";
+        } else if (index == 6) {
+          label.textContent = "Correo Electronico";
+          input.type = "text";
+        } else if (index == 7) {
+          label.textContent = "Telefonos";
+          input.type = "text";
+          aux = ul;
+        } else if (index == 8) {
+          label.textContent = "Fecha de Ingreso";
+          input.type = "text";
+        } else if (index == 9) {
+          label.textContent = "Fecha de Retiro";
+          input.type = "text";
+        } else if (index == 10) {
+          label.textContent = "Cargo Anterior";
+          input.type = "text";
+          aux = ul;
+        } else if (index == 11) {
+          label.textContent = "Dependencia";
+          input.type = "text";
+        } else if (index == 12) {
+          label.textContent = "Direccion";
+          input.type = "text";
+        }
+
+        div.appendChild(label);
+        div.appendChild(input);
+
+        li.appendChild(div);
+        aux.appendChild(li);
+        divPadre.appendChild(aux);
+
       }
-      
-
-      
-      div.appendChild(label);
-      div.appendChild(input);
-
-      
-      li.appendChild(div);
-      ul.appendChild(li);
-
-      
+      divPadre.className = 'contenido';
+      padre.appendChild(divPadre);
     }
-
-    divPadre.appendChild(ul);
-    divPadre.className = 'contenido'; 
-
-
-    padre.appendChild(divPadre);
-  }
-       
-</script>
+  </script>
 
 </body>
 
