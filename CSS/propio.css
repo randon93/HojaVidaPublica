@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../IMG/audi.jpg") ;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+   
+}
+
+p{
+    font-family: 'Passion One',
+    cursive;
+    font-size:x-large;
+}
+
+.logo {
+    width: 130px;
+}
+
+.contenedor {
+    width: 1024px;
+    margin: auto;
+}
+
+.inicio {
+    width: 400px;
+    height: 590px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #fff9;
+}
+
+.icono {
+    margin-bottom: 34px;
+}
+
+.formu {
+    text-align: center;
+    padding: 20px;
+    margin-top: 150px;
+    height: 100%;
+}
+
+.formu form div{    
+    margin: 50px;
+}
+
+.formu .ini:hover img{
+  display: none;
+
+}
+.escon{
+    display: none;
+}
+.formu .ini:hover .escon{
+  transform: translate(95px, 0px);
+  -ms-transform: translate(95px, 0px);
+  -moz-transform: translate(95px, 0px);
+  -webkit-transform: translate(95px, 0px);
+  -o-transform: translate(95px, 0px);
+  display: block;
+  width: 25%;
+}
+
+#sesionUser {
+    width: 255px;
+    padding: 8px 0px 8px 40px;
+    /* margin-bottom: 30px; */
+    border-radius: 10px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #39c;
+}
+
+#sesionCaontrasena {
+     width: 255px;
+     padding: 8px 0px 8px 40px;
+     /* margin-bottom: 30px; */
+     border-radius: 10px;
+     border: none;
+     border-radius: 5px;
+     border: 1px solid #39c;
+}
+
+.conIcon input[type=text]:focus{
+    border-color:  dodgerblue;
+    box-shadow: 0 0 40px 0 darkorchid;
+}
+.conIcon{
+    position: relative;
+}
+.conIcon img{
+    width: 10%;
+    position: absolute;
+    left: 0;
+    top: -4px;
+    padding: 8px 6px;
+    color: #aaa;
+    transition: .3s;
+}
+
+.conIcon input[type=text]:focus + img{
+    color:dodgerblue;
+}
+
